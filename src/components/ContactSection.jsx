@@ -2,7 +2,7 @@ function ContactSection({ contactMethods, onNavigate, onSubmit }) {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-black px-6 py-24 md:px-12 lg:px-20"
+      className="min-h-screen bg-[linear-gradient(135deg,#1c1917_0%,#111111_50%,#18181b_100%)] px-6 py-24 md:px-12 lg:px-20"
     >
       <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div>
@@ -31,7 +31,7 @@ function ContactSection({ contactMethods, onNavigate, onSubmit }) {
                       }
                     : undefined
                 }
-                className="group flex items-center gap-4 rounded-lg border border-zinc-800 bg-zinc-950 p-4 transition hover:border-yellow-400"
+                className="group flex items-center gap-4 rounded-lg border border-zinc-700/70 bg-zinc-900/70 p-4 backdrop-blur transition hover:border-yellow-400"
               >
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-yellow-400 font-bold text-zinc-950">
                   {method.icon}
@@ -48,7 +48,7 @@ function ContactSection({ contactMethods, onNavigate, onSubmit }) {
             ))}
           </div>
 
-          <div className="mt-8 rounded-lg border border-yellow-400/30 bg-yellow-400/10 p-5">
+          <div className="mt-8 rounded-lg border border-zinc-700/70 bg-zinc-900/70 p-5 backdrop-blur">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-yellow-400">
               Availability
             </p>
@@ -62,7 +62,7 @@ function ContactSection({ contactMethods, onNavigate, onSubmit }) {
 
         <form
           onSubmit={onSubmit}
-          className="rounded-lg border border-zinc-800 bg-zinc-950 p-6 text-white shadow-2xl shadow-black/40 md:p-8"
+          className="rounded-lg border border-zinc-700/70 bg-zinc-900/75 p-6 text-white shadow-2xl shadow-black/40 backdrop-blur md:p-8"
         >
           <div className="mb-8">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-yellow-400">
@@ -77,7 +77,7 @@ function ContactSection({ contactMethods, onNavigate, onSubmit }) {
               <input
                 name="name"
                 type="text"
-                className="rounded-lg border border-zinc-800 bg-black px-4 py-3 text-white outline-none transition placeholder:text-zinc-500 focus:border-yellow-400"
+                className="rounded-lg border border-zinc-700 bg-zinc-950/70 px-4 py-3 text-white outline-none transition placeholder:text-zinc-500 focus:border-yellow-400"
                 placeholder="Your name"
                 required
               />
@@ -88,7 +88,7 @@ function ContactSection({ contactMethods, onNavigate, onSubmit }) {
               <input
                 name="email"
                 type="email"
-                className="rounded-lg border border-zinc-800 bg-black px-4 py-3 text-white outline-none transition placeholder:text-zinc-500 focus:border-yellow-400"
+                className="rounded-lg border border-zinc-700 bg-zinc-950/70 px-4 py-3 text-white outline-none transition placeholder:text-zinc-500 focus:border-yellow-400"
                 placeholder="your@email.com"
                 required
               />
@@ -98,7 +98,7 @@ function ContactSection({ contactMethods, onNavigate, onSubmit }) {
               Topic
               <select
                 name="topic"
-                className="rounded-lg border border-zinc-800 bg-black px-4 py-3 text-white outline-none transition focus:border-yellow-400"
+                className="rounded-lg border border-zinc-700 bg-zinc-950/70 px-4 py-3 text-white outline-none transition focus:border-yellow-400"
               >
                 <option>Internship opportunity</option>
                 <option>Entry-level role</option>
@@ -113,7 +113,7 @@ function ContactSection({ contactMethods, onNavigate, onSubmit }) {
               <textarea
                 name="message"
                 rows="5"
-                className="resize-none rounded-lg border border-zinc-800 bg-black px-4 py-3 text-white outline-none transition placeholder:text-zinc-500 focus:border-yellow-400"
+                className="resize-none rounded-lg border border-zinc-700 bg-zinc-950/70 px-4 py-3 text-white outline-none transition placeholder:text-zinc-500 focus:border-yellow-400"
                 placeholder="Tell me what you want to build, test, or discuss."
                 required
               />

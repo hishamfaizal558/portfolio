@@ -24,8 +24,24 @@ export const cyberSkills = [
     icon: 'web',
   },
   {
+    label: 'Server Hosting',
+    icon: 'server',
+  },
+  {
+    label: 'Server Security',
+    icon: 'lock',
+  },
+  {
     label: 'Cryptography Basics',
     icon: 'key',
+  },
+  {
+    label: 'Social Engineering Awareness',
+    icon: 'users',
+  },
+  {
+    label: 'Apache & MariaDB',
+    icon: 'database',
   },
   {
     label: 'Security Reporting',
@@ -54,6 +70,20 @@ export const projects = [
     description:
       'A high-performance post-quantum encryption framework built with Go. The project explores quantum cryptography concepts, PKI integration, and polynomial encryption while focusing on the NIST-standardized CRYSTALS-Kyber algorithm.',
     stack: ['Go', 'Quantum Cryptography', 'PKI', 'Polynomial Encryption'],
+  },
+  {
+    title: 'Apache Credential Awareness Lab',
+    category: 'Linux Server Security',
+    description:
+      'A virtualized Ubuntu Linux server project using Apache Web Server and MariaDB to host a simulated login portal for educational cybersecurity awareness. The lab demonstrates Linux server hosting, Apache deployment, database integration, and how fake login portals can be used in social engineering attacks inside a controlled environment.',
+    stack: ['Ubuntu', 'Apache', 'MariaDB', 'Virtual Lab', 'Security Awareness'],
+  },
+  {
+    title: 'Network Traffic Analyzer',
+    category: 'Networking',
+    description:
+      'A networking tool concept for observing packet flow, protocol behavior, and traffic patterns across a lab environment. It helps document network activity and identify unusual connections during security testing.',
+    stack: ['Networking', 'Packet Analysis', 'Protocols', 'Monitoring'],
   },
 ]
 
